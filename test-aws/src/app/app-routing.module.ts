@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: "",
     pathMatch: "full",
-    redirectTo: "home"
+    redirectTo: "love"
   },
   {
     path: "home",
@@ -15,6 +15,10 @@ const routes: Routes = [
   {
     path: "page1",
     loadChildren: () => import('./../app/components/page1/page1.module').then(m => m.Page1Module)
+  },
+  {
+    path: "love",
+    loadChildren: () => import('./../app/components/iloveyou/iloveyou.module').then(m => m.IloveyouModule)
   }
 ];
 
