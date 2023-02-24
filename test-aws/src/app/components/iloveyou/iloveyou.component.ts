@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './iloveyou.component.html',
   styleUrls: ['./iloveyou.component.scss']
 })
-export class IloveyouComponent {
 
+export class IloveyouComponent {
+  test(){
+    const msg = document.getElementById("msg")
+    console.log(msg)
+    msg?.classList.toggle("view")
+  }
 }
