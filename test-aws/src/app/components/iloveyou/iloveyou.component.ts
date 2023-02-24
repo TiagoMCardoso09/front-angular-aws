@@ -9,7 +9,9 @@ import { Component } from '@angular/core';
 export class IloveyouComponent {
   test(){
     const msg = document.getElementById("msg")
-    console.log(msg)
+    const span = document.getElementById("span")
+
     msg?.classList.toggle("view")
+    span?.classList.toggle("view")
   }
 }
